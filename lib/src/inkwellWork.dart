@@ -40,7 +40,6 @@ class _inkWellWorkState extends State<inkWellWork> {
                   'Hello InkWell',
                   style: TextStyle(fontSize: 24),
                 ),
-                onDoubleTap: () => debugPrint('jioio'),
               ),
             ),
           ),
