@@ -1,26 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:mytaskproject/src/inkwellWork.dart';
-import 'package:mytaskproject/src/row&columnwork.dart';
+import 'package:mytaskproject/src/conTainer_work.dart';
+import 'package:mytaskproject/src/getUserInputWork.dart';
 
 void main(List<String> args) {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyMain(),
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
+      home: const ContainerWork(),
     ),
   );
 }
 
-class MyMain extends StatefulWidget {
-  const MyMain({super.key});
+// class MyMain extends StatefulWidget {
+//   const MyMain({super.key});
 
-  @override
-  State<MyMain> createState() => _MyMainState();
-}
+//   @override
+//   State<MyMain> createState() => _MyMainState();
+// }
 
-class _MyMainState extends State<MyMain> {
-  @override
-  Widget build(BuildContext context) {
-    return const inkWellWork();
-  }
-}
+// class _MyMainState extends State<MyMain> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return const MyApp();
+//   }
+// }
